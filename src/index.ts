@@ -3,13 +3,7 @@ import {
   JupyterFrontEndPlugin
 } from '@jupyterlab/application';
 
-import {
-  INotebookTracker,
-  NotebookActions,
-  NotebookPanel
-} from '@jupyterlab/notebook';
-
-import { MarkdownCell } from '@jupyterlab/cells';
+import { INotebookTracker, NotebookPanel } from '@jupyterlab/notebook';
 
 import { ICodeMirror, CodeMirrorEditor } from '@jupyterlab/codemirror';
 import { ISettingRegistry } from '@jupyterlab/settingregistry';
