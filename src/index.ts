@@ -85,6 +85,9 @@ async function setupPlugin(
   //////////////////////////////////////////////////////////////////////////////
   const CodeMirror = (jlabCodeMirror.CodeMirror as unknown) as CodeMirrorEditor;
   (CodeMirror as any).Vim.map('jk', '<Esc>', 'insert');
+  (CodeMirror as any).Vim.map('j', 'gj', 'normal');
+  (CodeMirror as any).Vim.map('k', 'gk', 'normal');
+  console.log('loaded sams vim keybindings');
 
   function getCurrent(args: ReadonlyPartialJSONObject): NotebookPanel | null {
     const widget = tracker.currentWidget;
